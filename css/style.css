@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+html,body{
+	margin:0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Quicksand', sans-serif;
+}
+body{
+	background: #de8d00;
+	color: #fff;
+}
+a{
+	color: #fff;
+}
+img{
+	max-width: 100%;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.maintenance-container{
+	max-width: 650px;
+}
+.maintenance-text{
+	text-align: center;
+}
+.maintenance-image-box{
+	max-width: 400px;
+	margin:0 auto;
+	position: relative;
+}
+.large-gear{
+	position: absolute;
+	opacity: 0.3;
+  	animation: rotating 20s linear infinite;
+}
+.laptop{
+	position: relative;
+	z-index: 10;
+}
+.gear_3{
+	max-width: 100px;
+	position: absolute;
+	right:0px;
+	bottom: 50px;
+	z-index: 8;
+  	animation: rotating 15s linear infinite;
+}
+.chainbox{
+    position: absolute;
+    max-width: 200px;
+    top: -90px;
+    left: 15%;
+    z-index: 100;
+}
+.key{
+    position: absolute;
+	max-width: 40px;
+	z-index: 10;
+	left: 0;
+}
+.chain{
+
+}
+.chain_gear{
+	position: absolute;
+	max-width: 50px;
+}
+.chain_gear1{
+    left: 14px;
+    top: 7px;
+  	animation: rotating 3s linear infinite;
+}
+.chain_gear2{
+    right: 11px;
+    top: 43px;
+    width: 40px;
+  	animation: rotating 3s linear infinite;
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
